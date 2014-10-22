@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/mojo-js/mojo-reader-example/issues"
   },
-  "homepage": "https://github.com/mojo-js/mojo-reader-example"
+  "homepage": "https://github.com/mojo-js/mojo-reader-example",
+  "devDependencies": {
+    "ditto": "0.0.11",
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.5",
+    "mojo-cli": "0.0.22"
+  }
 }
