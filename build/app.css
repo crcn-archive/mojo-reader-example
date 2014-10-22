@@ -35,6 +35,9 @@ body, html {
   padding: 15px;
   cursor: pointer;
 }
+.column.categories ul li:hover {
+  background-color: #444;
+}
 
 .column.categories ul li.selected {
   background-color: #444;
