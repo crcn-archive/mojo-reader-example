@@ -18,11 +18,16 @@ body, html {
   padding: 0px;
 }
 
+.app .column .title {
+  text-transform: uppercase;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
 .column.categories {
   color: rgba(255,255,255,0.8);
   background-color: #333;
   border-right: 2px solid #666;
-  padding-top: 15px;
 }
 
 .column.categories ul {
