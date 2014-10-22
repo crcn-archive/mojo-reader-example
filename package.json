@@ -2,9 +2,10 @@
   "name": "mojo-reader-example",
   "version": "1.0.0",
   "description": "mojo-reader-example ===================",
-  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/mojo build ./app/js/entry.js --output=build/app.min.js --serve=build --port=8085",
+    "build": "build-app",
+    "hotswap": "./node_modules/.bin/ditto-proxy http://127.0.0.1:8085 --port=8090 --verbose --watch='./app/**'"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,11 @@
     "expect.js": "^0.3.1",
     "mocha": "^1.21.5",
     "mojo-cli": "0.0.22"
+  },
+  "dependencies": {
+    "mojo-application": "^0.1.0",
+    "mojo-models": "^0.3.10",
+    "mojo-paperclip": "^0.6.5",
+    "mojo-views": "^0.2.6"
   }
 }
