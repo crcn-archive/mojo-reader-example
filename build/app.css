@@ -59,3 +59,9 @@ body, html {
 .column.stories ul li.selected {
   background-color: rgba(0,0,0,0.1);
 }
+
+.column.content .expand-collapse {
+  width: 10px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
