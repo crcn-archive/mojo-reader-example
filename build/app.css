@@ -15,6 +15,29 @@ body, html {
 .app .column {
   border-right: 1px solid rgba(0,0,0,0.1);
   height: 100%;
+  padding: 0px;
+}
+
+.column.categories {
+  color: rgba(255,255,255,0.8);
+  background-color: #333;
+  border-right: 2px solid #666;
+  padding-top: 15px;
+}
+
+.column.categories ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.column.categories ul li {
+  list-style-type: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.column.categories ul li.selected {
+  background-color: #444;
 }
 
 .column.stories ul {
@@ -24,11 +47,15 @@ body, html {
 
 .column.stories ul li {
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding: 15px;
   cursor: pointer;
 }
 
 .column.stories ul li:hover {
   color: #999;
+}
+
+
+.column.stories ul li.selected {
+  background-color: rgba(0,0,0,0.1);
 }
