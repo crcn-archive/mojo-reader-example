@@ -51,8 +51,21 @@ body, html {
   cursor: pointer;
 }
 
-.column.stories ul li:hover {
+.column.stories li .title {
+  font-weight: bold;
+}
+
+.column.stories li .via {
   color: #999;
+}
+
+.column.stories li .at {
+  float: right;
+  color: #999;
+}
+
+.column.stories ul li:hover {
+  background-color: rgba(0,0,0,0.1);
 }
 
 
