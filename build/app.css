@@ -8,6 +8,15 @@ body, html {
   height: 100%;
 }
 
+.modal {
+  display: block !important;
+}
+
+.modal-backdrop {
+  z-index: 0 !important;
+  background-color: rgba(0,0,0,0.3) !important;
+}
+
 .app.container .row {
   height: 100%;
 }
@@ -18,7 +27,7 @@ body, html {
   padding: 0px;
 }
 
-.app .column .title {
+.app .column .headline {
   text-transform: uppercase;
   padding: 15px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -40,6 +49,34 @@ body, html {
   padding: 15px;
   cursor: pointer;
 }
+
+.column.categories ul li .unread-count {  
+  float: right;
+  border-radius: 10px;
+  background-color: #999;
+  padding: 5px;
+  min-width: 50px;
+  text-align: center;
+  background-color: #81A2D5;
+}
+
+.column.categories .controls {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  curor: auto;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.column.categories .controls a {
+  color: rgba(255,255,255,0.8);
+}
+
+.column.categories .controls a:last-child {
+  float: right;
+}
+
 .column.categories ul li:hover {
   background-color: #444;
 }
@@ -51,6 +88,11 @@ body, html {
 .column.stories ul {
   list-style-type: none;
   padding: 0px;
+}
+
+.column.stories .edit {
+  float: right;
+  color: #333;
 }
 
 .column.stories ul li {
@@ -85,4 +127,55 @@ body, html {
   width: 10px;
   height: 100%;
   background-color: rgba(0,0,0,0.2);
+}
+
+.column.content {
+  overflow: scroll;
+  padding: 15px;
+}
+
+.column.content .author {
+  color: rgba(0,0,0,0.3);
+}
+
+
+.column.content .via {
+  color: rgba(0,0,0,0.3);
+}
+
+h3 {
+  padding-top: 0px;
+  margin: 0px !important;
+  margin-bottom: 15px !important;
+}
+
+.column.content .inner-content {
+  font-size: 16px;
+}
+
+.column.content .inner-content p {
+  padding-bottom: 15px;
+}
+
+video {
+  width: 100%;
+}
+
+.edit-category-modal ul {
+  list-style-type: none;
+  padding: 0px;
+  font-size: 16px;
+
+  padding-bottom: 15px;
+}
+
+.edit-category-modal input[type='text'] {
+  width: 90%;
+}
+.edit-category-modal ul li {
+  padding-top: 15px;
+}
+
+.edit-category-modal ul li .remove-source {
+  float: right;
 }

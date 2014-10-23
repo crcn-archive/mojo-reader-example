@@ -9,22 +9,28 @@ components.
     <title>Mojo.js Reader Example</title>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
   </head>
   <body>
     <div class="container app">
       <div class="row">
-        <div class="col-sm-2 column categories">
-          <div class="title">Categories</div>
+        <div class="col-md-2 column categories">
+          <div class="headline">Categories</div>
           <ul>
-            <li>Favorite Videos</li>
-            <li class="selected">test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+            <li class="selected">News <span class="unread-count">14</span></li>
+            <li>Science <span class="unread-count">2</span></li>
+            <li>Videos </li>
           </ul>
+          <div class="controls">
+            <a href="#" class="refresh"><i class="ion-refresh"></i></a>
+            <a href="#" class="add"><i class="ion-plus-round"></i></a>
+          </div>
         </div>
-        <div class="col-sm-4 column stories">
-          <div class="title">current category</div>
+        <div class="col-md-4 column stories">
+          <div class="headline">
+            News 
+            <a href="#" class="edit"><i class="ion-gear-a"></i></a>
+          </div>
           <ul>
             <li>
               <div>
@@ -60,11 +66,46 @@ components.
             </li>
           </ul>
         </div>
-        <div class="col-sm-6 column content">
-          <div class="title">story title</div>
-          <!--div class="expand-collapse"></div-->
+        <div class="col-md-6 column content">
+          <h3 class="title">In The Not So Distant Future, Glow-In-The-Dark Trees Could Replace Street Lights</h3>
+          <span class="author"><a href="#">Huffington Post</a> | By Katherine Brooks</span>
+
+          <hr />
+
+          <div class="inner-content">
+            <p>According to Daan Roosegaarde, the future of art and design is awash with spectacular innovation.</p> <p>From <a href="http://www.huffingtonpost.com/2013/10/27/daan-roosegaarde_n_4163920.html">giant vacuum cleaning systems</a> aimed at eradicating smog to <a href="http://designtaxi.com/news/363997/A-Futuristic-Dress-That-Becomes-Transparent-When-You-Get-Turned-On-NSFW/">&quot;smart&quot; apparel </a>that becomes translucent when the wearer is turned on, the Dutch artist/designer/architect has helped imagine some hair-raising projects that could propel us into a new era of aesthetics.</p> <p>His newest endeavor -- a plan to replace light fixtures with bioluminescent plants -- is no letdown in comparison.</p> <p>Taking a cue from biomimicry, Roosegaarde is hoping to transform your average street-side trees into beacons of light for passersby. Like the luminescent abilities of jellyfish, mushrooms or fireflies, Roosegaarde, scientist <a href="http://bioglowtech.com/about.html">Alexander Krichevsky</a> and the State University of New York are all on the case, splicing DNA from luminescent marine bacteria with the chloroplast of a houseplant.</p> <figure><iframe frameborder="0" src="http://player.vimeo.com/video/89651857?title=0&byline=0&color=6c6e95"></iframe></figure> <p>The smaller-scale, glow-in-the-dark specimens would act as the basis for a project of greater proportions -- light-emitting installations that look like trees. &quot;What happens when technology jumps out of the computer screen and becomes part of the things that we wear and the roads that we drive on?&quot; Roosegaarde muses in the video above.</p> <p>Watch the short clip to hear the artist speak more about his ambitious plans and the reason he's ventured to the United States to pursue his quest. Let us know your thoughts on the merging of nature and technology in the comments.</p> <p><a href="http://www.dezeen.com/2014/03/24/movie-sxsw-daan-roosegarde-glow-in-dark-trees/">h/t Dezeen</a></p> <p><em>Correction: An earlier edition of this article stated Roosegaarde employed biomimicry in his work. The piece has been amended to clarify he was inspired by it. </em></p>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="modal hide edit-category-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Edit News Category</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                <a href="http://www.reddit.com/r/videos/">http://www.reddit.com/r/videos/</a>
+                <a class="remove-source" href="#"><i class="ion-close-round"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/results?search_query=cooking">https://www.youtube.com/results?search_query=cooking</a>
+                <a class="remove-source" href="#"><i class="ion-close-round"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger pull-left">Remove Category</button>
+            <button type="button" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Add Source</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
   </body>
 </html>
