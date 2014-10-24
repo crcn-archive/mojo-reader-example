@@ -1,0 +1,12 @@
+<li data-href="article" data-bind="{{
+  css: {
+    selected: selected
+  }
+}}">
+  <div>
+    <span class="title">{{ model.title | ellipsis(50) }}</span>
+    <span class="via">via {{ model.via }}</span>
+    <span class="at">{{ model.createdAt | fromNow }}</span>
+  </div>
+  <p>{{ model.summary }}</p>
+</li>

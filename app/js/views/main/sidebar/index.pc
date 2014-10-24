@@ -1,0 +1,10 @@
+<div class="col-md-2 column categories">
+  <div class="headline">Categories</div>
+  <ul>
+    {{ html: children.items }}
+  </ul>
+  <div class="controls">
+    <a href="#" class="refresh"><i class="ion-refresh"></i></a>
+    <a href="#" class="add"><i class="ion-plus-round"></i></a>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<li data-bind="{{
+  css: {
+    selected: selected
+  }
+}}"> 
+
+  <a data-href="category">{{model.name}}</a>
+
+  {{#if: model.unreadCount }}
+    <span class="unread-count">{{ model.unreadCount }}</span>
+  {{/}}
+</li>

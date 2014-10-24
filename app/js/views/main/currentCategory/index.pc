@@ -1,0 +1,9 @@
+<div class="{{ currentArticle ? 'col-md-4' : 'col-md-10' }} column stories">
+  <div class="headline">
+    {{ category.name }} 
+    <a href="#" class="edit"><i class="ion-gear-a"></i></a>
+  </div>
+  <ul>
+    {{ html: children.items }}
+  </ul>
+</div>

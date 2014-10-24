@@ -1,0 +1,36 @@
+<div class="container app">
+  <div class="row">
+    {{ html: children.sidebar         }}
+    {{ html: children.currentCategory }}
+    {{ html: children.currentArticle  }}
+  </div>
+</div>
+
+<div class="modal hide edit-category-modal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Edit News Category</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <a href="http://www.reddit.com/r/videos/">http://www.reddit.com/r/videos/</a>
+            <a class="remove-source" href="#"><i class="ion-close-round"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/results?search_query=cooking">https://www.youtube.com/results?search_query=cooking</a>
+            <a class="remove-source" href="#"><i class="ion-close-round"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger pull-left">Remove Category</button>
+        <button type="button" class="btn btn-default">Close</button>
+        <button type="button" class="btn btn-primary">Add Source</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

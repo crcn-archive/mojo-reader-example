@@ -36,7 +36,6 @@ body, html {
 .column.categories {
   color: rgba(255,255,255,0.8);
   background-color: #333;
-  border-right: 2px solid #666;
 }
 
 .column.categories ul {
@@ -83,6 +82,10 @@ body, html {
 
 .column.categories ul li.selected {
   background-color: #444;
+}
+
+.column.stories {
+  overflow: scroll;
 }
 
 .column.stories ul {
